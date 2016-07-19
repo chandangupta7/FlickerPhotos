@@ -7,9 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ChandanParser.h"
+#import "DataModels.h"
+#import "PhotoAlbumCell.h"
+#import "SDWebImage/UIImageView+WebCache.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UICollectionViewDataSource, UICollectionViewDelegate>
 
+@property (weak, nonatomic) IBOutlet UICollectionView *photoCollectionView;
+@property(strong,nonatomic) getFlicker *objFlickers;
+@property(strong, nonatomic) NSMutableDictionary *dictCache;
 
 @end
 
