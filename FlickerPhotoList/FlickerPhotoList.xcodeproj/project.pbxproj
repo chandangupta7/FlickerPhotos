@@ -34,6 +34,7 @@
 		9E54DE1E1D3E3680001675F9 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E54DE0C1D3E3680001675F9 /* UIImageView+HighlightedWebCache.m */; };
 		9E54DE1F1D3E3680001675F9 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E54DE0E1D3E3680001675F9 /* UIImageView+WebCache.m */; };
 		9E54DE201D3E3680001675F9 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E54DE101D3E3680001675F9 /* UIView+WebCacheOperation.m */; };
+		9E54DE231D3E4EC4001675F9 /* ImageFullViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E54DE221D3E4EC4001675F9 /* ImageFullViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,6 +92,8 @@
 		9E54DE0E1D3E3680001675F9 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		9E54DE0F1D3E3680001675F9 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		9E54DE101D3E3680001675F9 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		9E54DE211D3E4EC4001675F9 /* ImageFullViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageFullViewController.h; sourceTree = "<group>"; };
+		9E54DE221D3E4EC4001675F9 /* ImageFullViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageFullViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +177,8 @@
 				9E54DDC21D3E28E9001675F9 /* ViewController.m */,
 				9E54DDD61D3E2A0E001675F9 /* ChandanParser.h */,
 				9E54DDD71D3E2A0E001675F9 /* ChandanParser.m */,
+				9E54DE211D3E4EC4001675F9 /* ImageFullViewController.h */,
+				9E54DE221D3E4EC4001675F9 /* ImageFullViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -309,6 +314,7 @@
 				9E54DDD81D3E2A0E001675F9 /* ChandanParser.m in Sources */,
 				9E54DE151D3E3680001675F9 /* SDWebImageDecoder.m in Sources */,
 				9E54DE1C1D3E3680001675F9 /* UIImage+MultiFormat.m in Sources */,
+				9E54DE231D3E4EC4001675F9 /* ImageFullViewController.m in Sources */,
 				9E54DE1D1D3E3680001675F9 /* UIImage+WebP.m in Sources */,
 				9E54DE171D3E3680001675F9 /* SDWebImageDownloaderOperation.m in Sources */,
 				9E54DE201D3E3680001675F9 /* UIView+WebCacheOperation.m in Sources */,

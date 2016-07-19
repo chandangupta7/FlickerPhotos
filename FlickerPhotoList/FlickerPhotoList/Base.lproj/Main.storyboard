@@ -3,9 +3,58 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Image Full View Controller-->
+        <scene sceneID="oPq-Qh-4xD">
+            <objects>
+                <viewController storyboardIdentifier="ImageFullView_Controller" id="Iuo-s9-9xP" customClass="ImageFullViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7Rx-ku-U90"/>
+                        <viewControllerLayoutGuide type="bottom" id="2r0-gw-Mez"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wuN-Gc-ah8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bQt-dU-Elq">
+                                <rect key="frame" x="0.0" y="64" width="320" height="320"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="bQt-dU-Elq" secondAttribute="height" multiplier="1:1" id="SuC-7M-XAW"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ReB-2g-Avz">
+                                <rect key="frame" x="16" y="398" width="288" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="MMZ-vO-pcz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="ReB-2g-Avz" secondAttribute="trailing" id="77g-U1-9Ca"/>
+                            <constraint firstItem="bQt-dU-Elq" firstAttribute="left" secondItem="wuN-Gc-ah8" secondAttribute="left" id="ARl-66-ea2"/>
+                            <constraint firstAttribute="right" secondItem="bQt-dU-Elq" secondAttribute="right" id="FN5-x9-3wX"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="ReB-2g-Avz" secondAttribute="leading" id="HL7-5O-jfA"/>
+                            <constraint firstItem="bQt-dU-Elq" firstAttribute="top" secondItem="7Rx-ku-U90" secondAttribute="bottom" id="JEM-kO-ftL"/>
+                            <constraint firstItem="ReB-2g-Avz" firstAttribute="top" secondItem="bQt-dU-Elq" secondAttribute="bottom" constant="14" id="tfy-Ae-LNZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="uuD-KF-uav"/>
+                    <connections>
+                        <outlet property="imgViewPhoto" destination="bQt-dU-Elq" id="LYV-11-WaS"/>
+                        <outlet property="lblPhotoTitle" destination="ReB-2g-Avz" id="bkI-n7-2sa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cXS-RT-T9W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1732" y="323"/>
+        </scene>
         <!--Flicker-->
         <scene sceneID="sA2-u3-Ysg">
             <objects>
@@ -90,6 +139,7 @@
                     <navigationItem key="navigationItem" title="Flicker" id="OAI-HA-Oc1"/>
                     <connections>
                         <outlet property="photoCollectionView" destination="aoj-X5-bcG" id="m0j-0j-Hjr"/>
+                        <segue destination="Iuo-s9-9xP" kind="push" identifier="SegueFullImage" id="bie-Yb-dby"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V4J-GR-Oof" userLabel="First Responder" sceneMemberID="firstResponder"/>
