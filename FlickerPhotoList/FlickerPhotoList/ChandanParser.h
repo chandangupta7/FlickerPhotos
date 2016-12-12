@@ -22,7 +22,7 @@ typedef void (^FailedDataFromServer)(NSError *error, NSString *urlString);
 @property (nonatomic, copy) void (^FailedDataFromServer)(NSError *FailedData, NSString *urlString);
 
 
--(void)createConnectionRequestForJsonWithURL:(NSString *)urlString WithJsonDictionary:(NSDictionary *)jsonDict anyObject:(id)anyObject;
+//-(void)createConnectionRequestForJsonWithURL:(NSString *)urlString WithJsonDictionary:(NSDictionary *)jsonDict anyObject:(id)anyObject;
 
 -(void)connectionRequestForJsonWithURL:(NSString *)urlString withJsonDictionary:(NSDictionary *)jsonDict withSuccessCompletionHandler:(SuccessDataFromServer)completionBlock withFailedCompletionHandler:(FailedDataFromServer)failCompletionBlock;
 
